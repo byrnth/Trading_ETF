@@ -1,4 +1,29 @@
 #once downloaded pre-requuisities
-#to create timsscal database in docker 
+#(in cmd)
+
+# to check images
+docker images
+
+#to open timsscale database in docker 
 #type in cmd
   docker exec -it timescaledb bash
+  
+ #access postgres app
+ psql -U postgres
+
+#find relations
+\d
+#list existing databases
+\l
+
+#exit postrges and go back to cmd
+exit
+\
+
+#reaccess postres in docker
+psql -U postgres
+
+#create databse
+create database etfdb;
+# check creation
+\l (should list new db)
