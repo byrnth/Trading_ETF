@@ -1,0 +1,4 @@
+#once downloaded pre-requuisities
+#to create timsscal database in docker 
+#type in cmd
+  docker exec -it timescaledb bash
