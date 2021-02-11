@@ -27,3 +27,7 @@ psql -U postgres
 create database etfdb;
 # check creation
 \l (should list new db)
+
+#connect to etfdatabase
+\c etfdb;
+
