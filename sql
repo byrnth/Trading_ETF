@@ -1,3 +1,5 @@
+## paste each "create table" into etfdb (in docker) in CMD line
+
 Create Table Stock(
 #add columns
 #independant numbering integer added as id
@@ -7,7 +9,7 @@ Create Table Stock(
   name TEXT NOT NULL,
   exchange TEXT NOT NULL,
   #TRUe/FALSE
-  is_ETF BOOLEAN NOT NULL,
+  is_ETF BOOLEAN NOT NULL
     
 );
 
@@ -17,9 +19,9 @@ CREATE TABLE etf_holding (
     dt DATE NOT NULL,
     shares NUMERIC,
     weight NUMERIC,
-    PRIMARY KEY (etf_td,holding_id,dt),
+    PRIMARY KEY (etf_id, holding_id, dt),
     CONSTRAINT fk_etf FOREIGN KEY (etf_id) REFERENCES stock (id),
-    CONSTRAINT fk_holding FOREIGN KEY (holding_id) stock (id)
+    CONSTRAINT fk_holding FOREIGN KEY (holding_id) REFERENCES stock (id)
 );
 
 CREATE TABLE stock_price (  
