@@ -36,3 +36,5 @@ CREATE TABLE stock_price (
 
 #index with date descending
 CREATE INDEX ON stock_price (stock_id, dt DESC);
+
+SELECT create_hypertable ('stock_price', 'dt');
