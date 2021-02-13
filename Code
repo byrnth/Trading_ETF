@@ -31,3 +31,11 @@ create database etfdb;
 #connect to etfdatabase
 \c etfdb;
 
+#cmd (shows content)
+docker ps 
+
+#to check if docker is live
+docker ps -a
+
+# start container
+docker start timescaledb
