@@ -1,0 +1,10 @@
+##sql code in postgre
+
+#check db has been populated
+#from * in etf_holding;
+
+#find changes in database
+select holding_id
+from etf_holding
+where dt = '2021-02-17'
+and holding_id NOT IN (select distinct(holding_id) from etf_holding where dt = '2021-01-26')
