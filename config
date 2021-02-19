@@ -1,0 +1,15 @@
+API_URL = "https://XXX"
+API_KEY = "XXXX"
+API_SECRET ="XXX
+
+HEADERS = {
+    "APCA-API-KEY-ID": API_KEY,
+    "APCA-API-SECRET-KEY" : API_SECRET
+}
+
+
+#datbase login details defaulted - should be changed for go live
+DB_HOST = "localhost"
+DB_USER = "postgres"
+DB_PASS = "password"
+DB_NAME = "etfdb" #check if this is correct
